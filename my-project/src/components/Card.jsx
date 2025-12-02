@@ -22,9 +22,9 @@ const Card = () => {
           </div>
 
           <div className="center">
-            <h3 className="text-[15px] font-normal mt-4 mb-1">
+            <h3 className="text-[15px] font-normal mt-4 ">
               Amazon
-              <span className="text-[10px] font-normal text-[#8b8b8b]">
+              <span className="text-[10px] font-normal ml-2 text-[#8b8b8b]">
                 5 days ago
               </span>
             </h3>
@@ -61,9 +61,9 @@ const Card = () => {
           </div>
           <div>
             <button
-              className="px-2 py-3 rounded-xl font-semibold 
-    text-[111] from-blue-600 to-indigo-600 shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 hover:scale-[1.03]
-    active:scale-[0.97] transition-all duration-300 ease-out"
+              className="px-2.5 py-2 rounded-xl font-semibold mt-2
+               text-[111] text-center bg-blue-100 from-blue-600 to-indigo-600 shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 hover:scale-[1.03] 
+               active:scale-[0.97] transition-all duration-300 ease-out"
             >
               Apply Now
             </button>
