@@ -1,6 +1,7 @@
 import { CiBookmarkCheck } from "react-icons/ci";
 
 import img from "../assets/amazon_log.jpg";
+
 const Card = () => {
   return (
     <div>
