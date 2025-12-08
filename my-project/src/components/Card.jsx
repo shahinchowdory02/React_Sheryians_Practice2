@@ -1,8 +1,7 @@
 import { CiBookmarkCheck } from "react-icons/ci";
-
 import img from "../assets/amazon_log.jpg";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div>
       <div className="card w-80 h-96 bg-white rounded-2xl shadow-lg p-10">
@@ -14,7 +13,6 @@ const Card = () => {
               className="w-10 h-10 border-2 border-white shadow-lg rounded-xl"
             />
             <button className="border border-[#dadada] bg-blue-100 px-3 py-1.5 rounded-xl shadow-sm flex items-center gap-2 align-   transition-all duration-300 ease-out hover:bg-blue-200 middle text-[11px] text-[b1b1b1b] hover:shadow-md hover:-translate-y-[1px] Follow">
-              {" "}
               Save
               <span>
                 <CiBookmarkCheck size={15} />
@@ -24,18 +22,18 @@ const Card = () => {
 
           <div className="center">
             <h3 className="text-[15px] font-normal mt-4 ">
-              Amazon
+              {props.company}
               <span className="text-[10px] font-normal ml-2 text-[#8b8b8b]">
-                5 days ago
+                {props.datePosted}
               </span>
             </h3>
-            <h2 className="text-[20px] font-bold">Senior UI/UX Designer</h2>
+            <h2 className="text-[20px] font-bold"> {props.tag1} </h2>
             <div className="flex align-middle space-between gap-2 mt-3 mb-3">
               <h4
                 className="text-[11px] text-center text-[#222] bg-[#dadada] py-1.5 px-3 rounded-lg font-medium border border-[#e5e5e5] transition-all duration-300
     hover:bg-[#e6e6e6]"
               >
-                Part Time
+                {props.tag2}
               </h4>
               <h4
                 className="text-[12px]
