@@ -1,5 +1,4 @@
 import { CiBookmarkCheck } from "react-icons/ci";
-import img from "../assets/amazon_log.jpg";
 
 const Card = (props) => {
   return (
@@ -8,8 +7,8 @@ const Card = (props) => {
         <div>
           <div className="top flex justify-between items-center align-middle">
             <img
-              src={img}
-              alt="amazon"
+              src={props.brandLogo}
+              alt="brandLogo"
               className="w-10 h-10 border-2 border-white shadow-lg rounded-xl"
             />
             <button className="border border-[#dadada] bg-blue-100 px-3 py-1.5 rounded-xl shadow-sm flex items-center gap-2 align-   transition-all duration-300 ease-out hover:bg-blue-200 middle text-[11px] text-[b1b1b1b] hover:shadow-md hover:-translate-y-[1px] Follow">
@@ -55,7 +54,7 @@ const Card = (props) => {
 
         <div className="bottom flex gap-6 border-t-[1.5px] border-[#d7d7d7ce] pt-[15px] mt-16">
           <div>
-            <h3 className="font-bold text-2xl">$120/hr</h3>
+            <h3 className="font-bold text-2xl"> {props.payPerHour} </h3>
             <p>Mumbai, India</p>
           </div>
           <div>
