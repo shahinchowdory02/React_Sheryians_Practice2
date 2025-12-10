@@ -109,16 +109,19 @@ const App = () => {
       <div className="flex justify-center items-center flex-wrap gap-6 m-auto   bg-gray-400 pt-20">
         {jobOpenings.map(function (elem, index) {
           return (
-            <Card
-              company={elem.companyName}
-              post={elem.post}
-              datePosted={elem.datePosted}
-              brandLogo={elem.brandLogo}
-              tag1={elem.tag1}
-              tag2={elem.tag2}
-              payPerHour={elem.payPerHour}
-              location={elem.location}
-            />
+            <div key={index}>
+              <Card
+                key={index}
+                company={elem.companyName}
+                post={elem.post}
+                datePosted={elem.datePosted}
+                brandLogo={elem.brandLogo}
+                tag1={elem.tag1}
+                tag2={elem.tag2}
+                payPerHour={elem.payPerHour}
+                location={elem.location}
+              />
+            </div>
           );
         })}
       </div>

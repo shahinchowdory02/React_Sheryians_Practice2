@@ -30,7 +30,7 @@ const Card = (props) => {
             <div className="flex align-middle space-between gap-2 mt-3 mb-3">
               <h4
                 className="text-[11px] text-center text-[#222] bg-[#dadada] py-1.5 px-3 rounded-lg font-medium border border-[#e5e5e5] transition-all duration-300
-    hover:bg-[#e6e6e6]"
+              hover:bg-[#e6e6e6]"
               >
                 {props.tag2}
               </h4>
