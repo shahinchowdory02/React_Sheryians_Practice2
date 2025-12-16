@@ -36,15 +36,15 @@ const Card = (props) => {
               </h4>
               <h4
                 className="text-[12px]
-    text-[#222]
-    bg-[#f0f0f0]
-    py-1.5 px-3
-    rounded-xl
-    font-medium
-    shadow-sm
-    border border-[#e5e5e5]
-    transition-all duration-300
-    hover:bg-[#e6e6e6]"
+                         text-[#222]
+                         bg-[#f0f0f0]
+                           py-1.5 px-3
+                           rounded-xl
+                           font-medium
+                           shadow-sm
+                           border border-[#e5e5e5]
+                           transition-all duration-300
+                         hover:bg-[#e6e6e6]"
               >
                 Senior Leavel
               </h4>
